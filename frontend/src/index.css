@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cyan: #00F5FF;
+  --color-brand-purple: #8A2BE2;
+  --color-brand-blue: #4FD1C5;
+  --color-bg-dark: #050A0F;
+  --color-bg-light: #0B141D;
+}
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-[#050A0F] to-[#0B141D] text-white min-h-screen m-0 p-0 overflow-x-hidden font-sans;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00F5FF] via-[#4FD1C5] to-[#8A2BE2];
+  }
+  
+  .glow-hover {
+    @apply transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,245,255,0.4)];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050A0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8A2BE2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00F5FF;
+}
+
+/* Hide cursor system-wide to use custom cursor */
+* {
+    cursor: none !important;
+}
