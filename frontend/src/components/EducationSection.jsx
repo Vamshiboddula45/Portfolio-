@@ -67,8 +67,8 @@ const certData = [
 
 const achievementsData = [
   {
-    title: "100+ LeetCode Solved",
-    desc: "Successfully solved 100+ Data Structures and Algorithms problems on LeetCode.",
+    title: "200+ LeetCode Solved",
+    desc: "Successfully solved 200+ Data Structures and Algorithms problems on LeetCode.",
     icon: <FaTrophy size={24} />,
     color: "#EAB308"
   },

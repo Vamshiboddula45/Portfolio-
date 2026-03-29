@@ -58,7 +58,7 @@ const AboutSection = () => {
               <p className="text-sm text-gray-400">Projects Built</p>
             </div>
             <div className="text-center p-4 rounded-xl bg-white/5 border border-white/5 hover:border-[#4FD1C5]/30 transition-colors">
-              <h3 className="text-3xl font-bold text-[#4FD1C5] mb-2">100+</h3>
+              <h3 className="text-3xl font-bold text-[#4FD1C5] mb-2">200+</h3>
               <p className="text-sm text-gray-400">DSA Problems</p>
             </div>
             <div className="text-center p-4 rounded-xl bg-white/5 border border-white/5 hover:border-[#00F5FF]/30 transition-colors">
