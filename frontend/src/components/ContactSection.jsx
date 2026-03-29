@@ -15,8 +15,8 @@ const ContactSection = () => {
     e.preventDefault();
     setStatus('loading');
     try {
-      // Pointing to local backend, in production this should be absolute URL
-      await axios.post('http://localhost:5000/api/contact', formData);
+      // Pointing to '/api/contact' works locally (via Vite proxy) and in production
+      await axios.post('/api/contact', formData);
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
       setTimeout(() => setStatus('idle'), 3000);
